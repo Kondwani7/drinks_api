@@ -65,5 +65,6 @@ def drinkDetails(request, id):
             return Response(serializer.data)
     #delete
     elif request.method == "DELETE":
-        pass
+        drink.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
     
