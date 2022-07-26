@@ -19,5 +19,6 @@ from server import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('server/', views.drinksList)
+    path('server/', views.drinksList),
+    path('server/<int:id>', views.drinkDetails)
 ]
